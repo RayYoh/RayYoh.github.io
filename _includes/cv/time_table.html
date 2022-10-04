@@ -17,20 +17,7 @@
             <h6 class="ml-1 ml-md-4" style="font-size: 0.95rem;">{{content.title}}</h6>
             {% endif %}
             {% if content.description %}
-              <ul class="items">
-                {% for item in content.description %}
-                    {% if item.contents %}
-                      <span class="item-title">{{ item.title }}</span>
-                      <ul class="subitems">
-                      {% for subitem in item.contents %}
-                        <li><span class="subitem">{{ subitem }}</span></li>
-                      {% endfor %}
-                      </ul>
-                    {% else %}
-                      <span class="item">{{ item }}</span>
-                    {% endif %}
-                {% endfor %}
-              </ul>
+            <h6 class="ml-1 ml-md-4" style="font-size: 0.95rem;">{{content.description}}</h6>
             {% endif %}
             {% if content.items %}
               <ul class="items">

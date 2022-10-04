@@ -30,7 +30,7 @@
     - institution: The Hong Kong Polytechnic University (PolyU)
       title: Visiting Student, Research Postgraduate Summer School 2022
       year: July 2022
-      description: 'Presentation: Robust state representation and policy learning for robot dexterous manipulation'
+      description: '<b>Presentation:</b> Robust state representation and policy learning for robot dexterous manipulation'
 
     - institution: Theory of Machines and Mechanisms(III)
       title: Teaching Assistant
@@ -38,8 +38,8 @@
 
     - institution: Hamlyn Center, Imperial College London (IC)
       title: Visiting Student, Robotic and Artificial Intelligence Winter School
-      year: Jan. 2019 - Feb. 2019
-      description: 'Supervisor: Prof. Guang-Zhong Yang, Dr. Benny Lo'
+      year: Jan. 2019-Feb. 2019
+      description: '<b>Supervisor:</b> Prof. Guang-Zhong Yang, Dr. Benny Lo'
 
     - institution: Shenzhen MIRAN Technology Co., Ltd.
       title: Summer Intern
@@ -78,11 +78,11 @@
   contents:
     - title: Theory
       items: 
-        - Robotics
-        - Machine learning
-        - Engineering control
-        - Mechanical principles
-        - Sensor technology
+        - 'Robotics: Robot kinematics, dynamics, etc.'
+        - 'Machine learning: Basic knowledge of DL and RL.'
+        - 'Engineering control: Common control methods, PID, MPC, etc.'
+        - 'Mechanical principles: Robot Mechanics, Mechanism Motion Principle'
+        - 'Sensor technology: Visual and tactile sensors'
     - title: Tools
       items:
         - Python, C++, Pytorch, MATLAB, JavaScrip

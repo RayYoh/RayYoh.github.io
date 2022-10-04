@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  Easy RL专栏 Reward Shaping, Imitationg learning
-date:   2021-09-04 10:26:30
+date:   2021-09-04 13:26:30
 description: Reward Shaping and Imitationg learning
 tags: Robot Reinforcement-Learning Machine-Learning
 categories: Easy-RL

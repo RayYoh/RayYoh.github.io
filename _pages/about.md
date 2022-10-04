@@ -9,12 +9,12 @@ profile:
   image: prof_pic.jpg
   image_circular: false # crops the image to make it circular
   description: >
-    <p><b>Final-year master student</b>
+    <p><b>Final-year master student
     <br><a href="http://mse.hust.edu.cn/">School of Mechanical Science and Engineering</a>
-    <br><a href="http://english.hust.edu.cn/)">Huazhong University of Science and Technology</a>
+    <br<a href="http://english.hust.edu.cn/)">Huazhong University of Science and Technology</a>
     <br>Email: <a href="mailto:rayyoh@hust.edu.cn/">rayyoh@hust.edu.cn</a>
     <br>Office: D402, Advanced Manufacturing Building, Wuhan, China
-    </p>
+    </b></p>
   address: >
 
 news: true  # includes a list of news items

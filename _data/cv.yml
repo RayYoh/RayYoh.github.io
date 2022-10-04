@@ -9,46 +9,42 @@
 - title: Education
   type: time_table
   contents:
-    - title: Master, Mechanical Engineering
-      institution: Huazhong University of Science and Technology (HUST)
+    - institution: Huazhong University of Science and Technology (HUST)
+      title: Master, Mechanical Engineering
       year: Sep. 2020-Present
-      description:
-        Adviser Prof. Youping Chen and Prof. Dailin Zhang
+      description: 'Adviser: Prof. Youping Chen and Prof. Dailin Zhang'
 
-    - title: Bachelor, Measurement and Control Technology and Instruments
-      institution: Huazhong University of Science and Technology (HUST)
+    - institution: Huazhong University of Science and Technology (HUST)
+      title: Bachelor, Measurement and Control Technology and Instruments
       year: Sep. 2016-Jun. 2020
-      description:
-        'Thesis: Research on industrial robot teaching system based on traction force sensor'
+      description: 'Thesis: Research on industrial robot teaching system based on traction force sensor'
 
 - title: Academic & Professional Experience
   type: time_table
   contents:
-    - title: Research Intern
-      institution: RoboticsX Lab, Tencent
+    - institution: RoboticsX Lab, Tencent
+      title: Research Intern
       year: May 2022-Oct. 2022
-      description:
-        Robot dynamic nonprehensile manipulation policy learning.
+      description: Robot dynamic nonprehensile manipulation policy learning.
       
-    - title: Visiting Student
-      institution: The Hong Kong Polytechnic University (PolyU)
+    - institution: The Hong Kong Polytechnic University (PolyU)
+      title: Visiting Student
       year: July 2022
-      description:
-        Research Postgraduate Summer School 2022
+      description: Research Postgraduate Summer School 2022
 
-    - title: Teaching Assistant
-      institution: Theory of Machines and Mechanisms(III)
+    - institution: Theory of Machines and Mechanisms(III)
+      title: Teaching Assistant
       year: Spring 2021
 
-    - title: Visiting Student
-      institution: Hamlyn Center, Imperial College London (IC)
+    - institution: Hamlyn Center, Imperial College London (IC)
+      title: Visiting Student
       year: Jan. 2019 - Feb. 2019
       description:
         - Robotic and Artificial Intelligence Winter School
-        - Supervisor Prof. Guang-Zhong Yang, Dr. Benny Lo
+        - 'Supervisor: Prof. Guang-Zhong Yang, Dr. Benny Lo'
 
-    - title: Summer Intern
-      institution: Shenzhen MIRAN Technology Co., Ltd.
+    - institution: Shenzhen MIRAN Technology Co., Ltd.
+      title: Summer Intern
       year: Jul. 2019-Aug. 2019
       
 - title: Open Source Projects
@@ -97,14 +93,14 @@
 - title: Activities and Volunteers
   type: time_table
   contents:
-    - title: Volunteer
-      institution: Wuhan Metro Volunteer Team
+    - institution: Wuhan Metro Volunteer Team
+      title: Volunteer
       year: Oct. 2017-Dec. 2019
       
-    - title: Volunteer
-      institution: China College Students Internet+ Innovation and Entrepreneurship Competition
+    - institution: China College Students Internet+ Innovation and Entrepreneurship Competition
+      title: Volunteer
       year: Oct. 2016
 
-    - title: Assistant
-      institution: The Organization Department of the Communist Youth League of HUST
+    - institution: The Organization Department of the Communist Youth League of HUST
+      title: Assistant
       year: Sep. 2016-Sep. 2017

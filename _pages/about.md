@@ -1,8 +1,8 @@
 ---
-layout: aboutnew
+layout: about
 title: About
 permalink: /
-subtitle: <p>Final-year master student<br>School of Mechanical Science and Engineering<br>Huazhong University of Science and Technology</p>
+subtitle:
 
 profile:
   align: right
@@ -15,9 +15,6 @@ profile:
     <br>Office: D402, Advanced Manufacturing Building, Wuhan, China
     </p>
   address: >
-    <p>Office: D402, Advanced Manufacturing Building</p>
-    <p>Hongshan, Wuhan</p>
-    <p>Hubei, China</p>
 
 news: true  # includes a list of news items
 selected_papers: true # includes a list of papers marked as "selected={true}"

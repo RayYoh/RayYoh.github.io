@@ -11,7 +11,7 @@ profile:
   description: >
     <p><b>Final-year master student
     <br><a href="http://mse.hust.edu.cn/">School of Mechanical Science and Engineering</a>
-    <br<a href="http://english.hust.edu.cn/">Huazhong University of Science and Technology</a>
+    <br><a href="http://english.hust.edu.cn/">Huazhong University of Science and Technology</a>
     <br>Email: <a href="mailto:rayyoh@hust.edu.cn/">rayyoh@hust.edu.cn</a>
     <br>Office: D402, Advanced Manufacturing Building, Wuhan, China
     </b></p>

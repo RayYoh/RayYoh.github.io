@@ -51,6 +51,9 @@
     - institution: <a href="https://github.com/RayYoh/BasicRL">BasicRL</a>
       year: 2022-now
       description: Easy and fundamental codes for deep reinforcement learning.
+    - institution: <a href="https://github.com/RayYoh/smart_robot_platfrom">SmartCompliant Robot Platfrom</a>
+      year: 2022-now
+      description: A smart robot platform for UR series robot based on six-axis force sensor.
 
 - title: Honors and Awards
   type: time_table

@@ -1,5 +1,5 @@
 ---
-layout: aboutnew
+layout: about
 title: About
 permalink: /
 subtitle: <p>Final-year master student<br>School of Mechanical Science and Engineering<br>Huazhong University of Science and Technology</p>
@@ -9,7 +9,11 @@ profile:
   image: prof_pic.jpg
   image_circular: false # crops the image to make it circular
   description: >
-    <p>Final-year master student<br>School of Mechanical Science and Engineering<br>Huazhong University of Science and Technology</p>
+    <p>Final-year master student
+    <br>School of Mechanical Science and Engineering
+    <br>Huazhong University of Science and Technology
+    <br>Office: D402, Advanced Manufacturing Building, Wuhan, China
+    </p>
   address: >
     <p>Office: D402, Advanced Manufacturing Building</p>
     <p>Hongshan, Wuhan</p>

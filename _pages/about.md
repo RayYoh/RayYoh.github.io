@@ -1,5 +1,5 @@
 ---
-layout: about
+layout: aboutnew
 title: About
 permalink: /
 subtitle: <p>Final-year master student<br>School of Mechanical Science and Engineering<br>Huazhong University of Science and Technology</p>

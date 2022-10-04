@@ -4,35 +4,18 @@ layout: default
 
 <!-- about.html -->
       <div class="post">
-        <header class="post-header">
-          <div class="col-sm-9">
-            <h1 class="post-title">
-              {% if site.title == "blank" -%}<span class="font-weight-bold">{{ site.first_name }}</span> {{ site.middle_name }} {{ site.last_name }}{%- else -%}{{ site.title }}{%- endif %}
-            </h1>
-            <p class="desc">{{ page.subtitle }}</p>
-            <p class="desc">{{ page.profile.description }}</p>
-          </div>
-          <div class="col-sm-3">
-            <img style="width: 170px" src="../assets/img/xiaohui.png">
-          </div>
-          
-        </header>
-
-        <!-- <article>
-          <div class="row">
-            <div class="col-sm-3">
-                {% if page.profile.image %}
-                <img style="width: 170px;border-radius: 170px" src="{{ page.profile.image | prepend: '/assets/img/' | relative_url }}">
-                {% endif %}
-            </div>
-        
+        <article>
+          <div class="row">        
             <div class="col-sm-9">
                 <h1 class="post-title">
                 {% if site.title == "blank" %}<span class="font-weight-bold">{{ site.first_name }}</span> {{ site.middle_name }} {{ site.last_name }}{% else %}{{ site.title }}{% endif %}
                 </h1>
                 <p class="desc">{{ page.profile.description }}</p>   
             </div>
-          </div> -->
+            <div class="col-sm-3">
+              <img style="width: 170px" src="../assets/img/xiaohui.png">
+            </div>
+          </div>
           {% if page.profile -%}
           <div class="profile float-{%- if page.profile.align == 'left' -%}left{%- else -%}right{%- endif -%}">
             {%- if page.profile.image %}

@@ -1,6 +1,6 @@
 ---
 layout: page
-title: BasicRL easy and fundamental codes for deep reinforcement learning
+title: BasicRL
 description: Easy and fundamental codes for deep reinforcement learning.
 img: assets/img/BasicRL.png
 importance: 1

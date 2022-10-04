@@ -5,7 +5,7 @@ permalink: /
 subtitle: <p>Final-year master student<br>School of Mechanical Science and Engineering<br>Huazhong University of Science and Technology</p>
 
 profile:
-  align: left
+  align: right
   image: prof_pic.jpg
   image_circular: false # crops the image to make it circular
   description: >

@@ -1,11 +1,11 @@
 ---
 layout: page
-title: Projects
+title: Research
 permalink: /projects/
-description: A growing collection of my projects.
+description: This page lists some previous research works that I do. I am developing sample-efficient and robust learning algorithms for robot dexterous manipulation both in simulation and real world. Particularly I am interested in exploring the potential topics for facilitating robot autonomy in unstructed environment.
 nav: true
 nav_order: 3
-display_categories: [work, fun]
+display_categories: [robot learning, robot platform, machine vision]
 horizontal: false
 ---
 

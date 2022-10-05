@@ -1,8 +1,8 @@
 ---
 layout: page
-title: Coming soon...
+title: Nonprehensile Manipulation
 description: a project with a background image
-img: assets/img/3.jpg
+img: assets/img/nonprehensile_manipulation.gif
 importance: 2
 category: work
 ---

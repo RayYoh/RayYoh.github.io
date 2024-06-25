@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="description"
+        content="SGFormer: Semantic Guided and Geometric Enhanced Interleaving Transformer for 3D Instance Segmentation">
+  <meta name="keywords" content="SGFormer, Point Clouds, Instance Segmentation">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>SGFormer: Semantic Guided and Geometric Enhanced Interleaving Transformer for 3D Instance Segmentation</title>
+
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-PYVRSFMDRL"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+
+    function gtag() {
+      dataLayer.push(arguments);
+    }
+
+    gtag('js', new Date());
+
+    gtag('config', 'G-PYVRSFMDRL');
+  </script>
+
+  <link href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro" rel="stylesheet">
+
+  <link rel="stylesheet" href="./static/css/bulma.min.css">
+  <link rel="stylesheet" href="./static/css/bulma-carousel.min.css">
+  <link rel="stylesheet" href="./static/css/bulma-slider.min.css">
+  <link rel="stylesheet" href="./static/css/fontawesome.all.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
+  <link rel="stylesheet" href="./static/css/index.css">
+  <!-- <link rel="icon" href="./static/images/favicon.png"> -->
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script defer src="./static/js/fontawesome.all.min.js"></script>
+  <script src="./static/js/bulma-carousel.min.js"></script>
+  <script src="./static/js/bulma-slider.min.js"></script>
+  <script src="./static/js/index.js"></script>
+  
+  <link rel="stylesheet" href="static/css/style.css"> <!-- Resource style -->
+  <script src="static/js/modernizr.js"></script> <!-- Modernizr -->
+</head>
+
+<body>
+
+<nav class="navbar" role="navigation" aria-label="main navigation">
+  <div class="navbar-brand">
+    <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false">
+      <span aria-hidden="true"></span>
+      <span aria-hidden="true"></span>
+      <span aria-hidden="true"></span>
+    </a>
+  </div>
+  <div class="navbar-menu">
+    <div class="navbar-start" style="flex-grow: 1; justify-content: center;">
+      <a class="navbar-item" href="https://rayyoh.github.io/">
+      <span class="icon">
+          <i class="fas fa-home"></i>
+      </span>
+      </a>
+
+      <div class="navbar-item has-dropdown is-hoverable">
+        <a class="navbar-link">
+          More Research
+        </a>
+        <div class="navbar-dropdown">
+          <a class="navbar-item" href="https://rayyoh.github.io/">
+            Ray
+          </a>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</nav>
+
+
+<section class="hero">
+  <div class="hero-body">
+    <div class="container is-max-desktop">
+      <div class="columns is-centered">
+        <div class="column has-text-centered">
+          <h1 class="title is-2 publication-title" style="color:rgba(74, 77, 163, 0.797)">SGFormer <br>
+            <p class="title is-3 publication-title">Semantic Guided and Geometric Enhanced Interleaving Transformer for 3D Instance Segmentation</p>
+          </h1>
+          <h1 class="title is-4" style="color: #5c5c5c;">Under Review, 2024</h1>
+          <div class="is-size-5 publication-authors">
+            <span class="author-block">
+              <a href="https://rayyoh.github.io/">Lei Yao</a><sup>1</sup>,</span>
+            <span class="author-block">
+              <a href="">Author2</a><sup>2</sup>,
+            </span>
+          </div>
+
+          <div class="is-size-5 publication-authors">
+            <span class="author-block"><sup>1</sup>The Hong Kong Polytecnic University</span>
+          </div>
+
+          <div class="column has-text-centered">
+            <div class="publication-links">
+              <!-- PDF Link. -->
+              <span class="link-block">
+                <a href=""
+                   class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon">
+                      <i class="fas fa-file-pdf"></i>
+                  </span>
+                  <span>Paper</span>
+                </a>
+              </span>
+              <!-- Code Link. -->
+              <span class="link-block">
+                <a href="https://github.com/RayYoh/SGFormer"
+                   class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon">
+                      <i class="fab fa-github"></i>
+                  </span>
+                  <span>Code</span>
+                  </a>
+              </span>
+              <!-- Dataset Link. -->
+              <span class="link-block">
+                <a href="https://huggingface.co/RayYoh/SGFormer"
+                   class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon">
+                    <img src="static/images/hf_icon.svg" />
+                  </span>
+                  <span>Models & Data</span>
+                  </a>
+                </span>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="hero teaser">
+    <div class="container is-max-desktop">
+        <div class="hero-body">
+            <video id="teaser" autoplay muted loop playsinline height="100%">
+                <source src="./static/videos/teaser.mp4" type="video/mp4">
+            </video>
+            <p><strong>Performance of our proposed <b style="color:rgba(74, 77, 163, 0.797)">SGFormer.</b></strong> (a) We visualize the performance of different methods in terms of AP<sub>50</sub> and corresponding model size on ScanNet validation split. <b style="color:rgba(74, 77, 163, 0.797)">SGFormer.</b> achieves the best performance compared to existing methods, and the even smaller version achieves competitive results. (b) We demonstrate the fine-grained segmentation results of <b style="color:rgba(74, 77, 163, 0.797)">SGFormer.</b> on ScanNet++ validation set. The proposed method can accurately segment small instances and capture fine-grained details even in large-scale scenes.</p>
+        </div>
+    </div>
+    <div class="container is-max-desktop">
+         <!-- Abstract. -->
+         <div class="columns is-centered has-text-centered">
+            <div class="column is-four-fifths">
+                <h2 class="title is-3"><b style="color:rgba(74, 77, 163, 0.797)">Abstract</b></h2>
+                <div class="content has-text-justified">
+                    <p>The Abstract goes here.</p>
+                </div>
+            </div>
+        </div>
+        <!--/ Abstract. -->
+</section>
+
+<section class="section">
+    <div class="container is-max-desktop">
+        <hr style="margin-top: 1em;">
+        <div class="columns is-centered">
+        <div class="column is-full-width">
+            <h4 class="title is-4"><b style="color:rgba(74, 77, 163, 0.797)">ScanNet++ Instance Segmentation Benchmark</b></h4>
+            <div class="content has-text-justified">
+                Our <b style="color:rgba(74, 77, 163, 0.797)">SGFormer</b> achieves state-of-the-art performance on ScanNet++ <a href="https://kaldir.vc.in.tum.de/scannetpp/benchmark/insseg">hidden test set</a>. Results are reported on 24 June 2024.
+            </div>
+            <img src="static/images/leadboard.png" alt="ScanNet++ Instance Segmentation Benchmark" width="100%">
+            <hr style="margin-top: 1em;">
+
+            <h4 class="title is-4"><b style="color:rgba(74, 77, 163, 0.797)">ScanNet++ Visualization Results</b></h4>
+            <div class="content has-text-justified">
+                We visualize several representative large-scale examples of <b style="color:rgba(74, 77, 163, 0.797)">SGFormer</b> on ScanNet++ validation set.
+            </div>
+          
+            <div class="column  has-text-centered">
+                <video id="scene00" autoplay muted loop playsinline width="90%">
+                    <source src="static/videos/21d970d8de.mp4" type="video/mp4">
+                </video>
+            </div>
+          
+            <div class="column  has-text-centered">
+                <video id="scene01" autoplay muted loop playsinline width="90%">
+                    <source src="static/videos/7b6477cb95.mp4" type="video/mp4">
+                </video>
+            </div>
+          
+            <div class="column  has-text-centered">
+                <video id="scene02" autoplay muted loop playsinline width="90%">
+                    <source src="static/videos/f3d64c30f8.mp4" type="video/mp4">
+                </video>
+            </div>
+          
+            <div class="column  has-text-centered">
+                <video id="scene03" autoplay muted loop playsinline width="90%">
+                    <source src="static/videos/fb5a96b1a2.mp4" type="video/mp4">
+                </video>
+            </div>
+            
+            
+            <hr style="margin-top: 1em;">
+            <h3 class="title is-4"><b style="color:rgba(74, 77, 163, 0.797)">ScanNet Visualization Results</b></h3>
+            <p>We compare <b style="color:rgba(74, 77, 163, 0.797)">SGFormer</b> with SPFormer and Spherical Mask on ScanNet validation set.</p>
+            <br>
+
+            <div class="columns is-vcentered">
+                <div class="column  has-text-centered">
+                    <figure class="cd-image-container">
+                        <img src="static/images/scene0011_00_spformer.png" alt="Original Image">
+                        <span class="cd-image-label" data-type="original"></span>
+
+                        <div class="cd-resize-img"> <!-- the resizable image on top -->
+                            <img src="static/images/scene0011_00_ours.png" alt="Modified Image">
+                            <span class="cd-image-label" data-type="modified"></span>
+                        </div>
+
+                        <span class="cd-handle"></span>
+                    </figure>
+                </div>
+
+                <div class="column  has-text-centered">
+                    <figure class="cd-image-container">
+                        <img src="static/images/scene0030_00_spformer.png" alt="Original Image">
+                        <span class="cd-image-label" data-type="original"></span>
+
+                        <div class="cd-resize-img"> <!-- the resizable image on top -->
+                            <img src="static/images/scene0030_00_ours.png" alt="Modified Image">
+                            <span class="cd-image-label" data-type="modified"></span>
+                        </div>
+
+                        <span class="cd-handle"></span>
+                    </figure>
+                </div>
+            </div>
+
+            <div class="columns is-vcentered">
+                <div class="column  has-text-centered">
+                    <figure class="cd-image-container">
+                        <img src="static/images/scene0334_01_sph.png" alt="Original Image">
+                        <span class="cd-image-label" data-type="original"></span>
+
+                        <div class="cd-resize-img"> <!-- the resizable image on top -->
+                            <img src="static/images/scene0334_01_ours.png" alt="Modified Image">
+                            <span class="cd-image-label" data-type="modified"></span>
+                        </div>
+
+                        <span class="cd-handle"></span>
+                    </figure>
+                </div>
+
+                <div class="column  has-text-centered">
+                    <figure class="cd-image-container">
+                        <img src="static/images/scene_sph.png" alt="Original Image">
+                        <span class="cd-image-label" data-type="original"></span>
+
+                        <div class="cd-resize-img"> <!-- the resizable image on top -->
+                            <img src="static/images/scene_ours.png" alt="Modified Image">
+                            <span class="cd-image-label" data-type="modified"></span>
+                        </div>
+
+                        <span class="cd-handle"></span>
+                    </figure>
+                </div>
+            </div>          
+        </div>
+    </div>
+</section>
+
+<section class="section" id="Acknowledgment">
+    <div class="container is-max-desktop content">
+      <h2 class="title">Acknowledgment</h2>
+      <p>The research work was conducted in the JC STEM Lab of Machine Learning and Computer Vision funded by The Hong Kong Jockey Club Charities Trust. </p>
+    </div>
+</section>
+
+
+<section class="section" id="BibTeX">
+  <div class="container is-max-desktop content">
+    <h2 class="title">BibTeX 🙏</h2>
+    <pre><code>@article{yao2024sgformer,
+  author    = {Lei Yao},
+  title     = {SGFormer: Semantic Guided and Geometric Enhanced Interleaving Transformer for 3D Instance Segmentation},
+  journal   = {xxx},
+  year      = {2024},
+}</code></pre>
+  </div>
+</section>
+
+<footer class="footer">
+  <div class="container">
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-8">
+        <div class="content">
+          <a style="color:hsla(247, 58%, 62%, 0.862)" href="#top"><i class="fa fa-arrow-up"></i><br/>Top</a>
+          <p>
+            Website from <a style="color:hsla(247, 58%, 62%, 0.862)" href="https://github.com/nerfies/nerfies.github.io">NeRFies</a> under <a style="color:hsla(247, 61%, 57%, 0.862)"
+            href="https://creativecommons.org/licenses/by-sa/4.0/">Creative Commons Attribution-ShareAlike 4.0
+            International</a>
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</footer>
+
+</body>
+</html>

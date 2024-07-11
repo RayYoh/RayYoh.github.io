@@ -89,12 +89,20 @@
             <span class="author-block">
               <a href="https://rayyoh.github.io/">Lei Yao</a><sup>1</sup>,</span>
             <span class="author-block">
-              <a href="">Author2</a><sup>2</sup>,
+              <a href="https://wangyintu.github.io/">Yi Wang</a><sup>1</sup>,
+            </span>
+            <span class="author-block">
+              <a href="https://lmomoy.github.io/">Moyun Liu</a><sup>2</sup>,
+            </span>
+            <span class="author-block">
+              <a href="https://www.eie.polyu.edu.hk/~lpchau/">Lap-Pui Chau</a><sup>1</sup>,
             </span>
           </div>
 
           <div class="is-size-5 publication-authors">
             <span class="author-block"><sup>1</sup>The Hong Kong Polytecnic University</span>
+            <br>
+            <span class="author-block"><sup>2</sup>Huazhong University of Science and Technology</span>
           </div>
 
           <div class="column has-text-centered">
@@ -129,7 +137,17 @@
                   <span>Models & Data</span>
                   </a>
                 </span>
-
+              
+              <span class="link-block">
+                <a href="./static/visualizations/f3d64c30f8/index.html" 
+                  class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon">
+                      <i class="fab fa-codepen"></i>
+                  </span>
+                  <span>ScanNet++ Demo</span>
+                </a>
+              </span>
+              
               <span class="link-block">
                   <a href="./static/visualizations/scene0011_00/index.html" 
                     class="external-link button is-normal is-rounded is-dark">
@@ -139,16 +157,7 @@
                     <span>ScanNet Demo</span>
                   </a>
               </span>
-              
-              <span class="link-block">
-                  <a href="./static/visualizations/f3d64c30f8/index.html" 
-                    class="external-link button is-normal is-rounded is-dark">
-                    <span class="icon">
-                        <i class="fab fa-codepen"></i>
-                    </span>
-                    <span>ScanNet++ Demo</span>
-                  </a>
-              </span>
+            
             </div>
 
           </div>
@@ -173,7 +182,7 @@
             <div class="column is-four-fifths">
                 <h2 class="title is-3"><b style="color:rgba(74, 77, 163, 0.797)">Abstract</b></h2>
                 <div class="content has-text-justified">
-                    <p>The Abstract goes here.</p>
+                    <p>Inspired by recent advances in 2D segmentation, transformer-based models have exhibited considerable potential in point cloud instance segmentation. Despite the promising performance achieved by existing methods, they encounter challenges such as instance query initialization problems and excessive reliance on stacked layers, rendering them incompatible with large-scale 3D scenes. In this paper, we introduce a novel method, named <b style="color:rgba(74, 77, 163, 0.797)">SGIFormer</b></strong>, for 3D instance segmentation, which combines <b>semantic-guided query initialization</b> and <b>geometric-enhanced interleaving transformer</b>. The principle of our query initialization scheme is to leverage the predicted voxel-wise semantic information to implicitly generate the non-parametric query, yielding adequate scene prior and detail retention. Subsequently, by incorporating another learnable query set, we feed the formed overall query into our decoder to alternately refine instance query and global scene features for further capturing fine-grained information and reducing complex design intricacies simultaneously. To emphasize geometric property, we consider bias estimation as an auxiliary task and progressively integrate shifted point coordinates embedding to reinforce instance localization. <b style="color:rgba(74, 77, 163, 0.797)">SGIFormer</b></strong> attains state-of-the-art performance on ScanNet V2, ScanNet200 datasets and challenging high-fidelity ScanNet++ benchmark, striking a balance between accuracy and efficiency.</p>
                 </div>
             </div>
         </div>

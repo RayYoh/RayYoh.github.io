@@ -168,3 +168,14 @@ abs {
 span.highlight {
   background-color: #ffffd0;
 }
+
+
+.previous-pubs summary {
+  margin: 4px 0 10px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.previous-pubs summary:hover {
+  color: #0026fe;
+}

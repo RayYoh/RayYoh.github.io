@@ -739,9 +739,15 @@ footer {
 }
 
 [data-theme="dark"] .social-links .job-pill {
-  color: #a8e0a0 !important;
-  background-color: #142a18 !important;
-  border-color: #2a4a2a !important;
+  color: #062a0c !important;
+  background: linear-gradient(135deg, #6dea88 0%, #3fd163 100%) !important;
+  border-color: #2db84a !important;
+}
+[data-theme="dark"] .social-links .job-pill .status-dot {
+  background-color: #0a3d14;
+}
+[data-theme="dark"] .social-links .job-pill .status-dot::after {
+  background-color: rgba(10, 61, 20, 0.55);
 }
 [data-theme="dark"] .social-links .job-pill:hover {
   color: #fff !important;

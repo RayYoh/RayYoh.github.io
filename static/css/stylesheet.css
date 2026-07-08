@@ -647,7 +647,16 @@ section {
 
 #visitor-map-container {
     text-align: center;
-    margin: 2em 0;
+    margin: 2em auto;
+    max-width: 300px;
+}
+
+#visitor-map-container img,
+#visitor-map-container canvas,
+#visitor-map-container svg,
+#visitor-map-container iframe {
+    max-width: 100%;
+    height: auto;
 }
 
 footer {

@@ -316,6 +316,9 @@ section {
 .publication-image img {
   display: block;
   width: 100%;
+  aspect-ratio: 16 / 10;
+  object-fit: contain;
+  box-sizing: border-box;
   transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
   border-radius: 8px;
   box-shadow: 0 4px 6px rgba(0,0,0,0.1);
@@ -330,6 +333,31 @@ section {
   transform: scale(1.15);
   box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
   z-index: 100;
+}
+
+.publication-image .pub-placeholder {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  text-align: center;
+  width: 100%;
+  aspect-ratio: 16 / 10;
+  padding: 5px;
+  box-sizing: border-box;
+  border-radius: 8px;
+  border: 1px dashed #c7ccdb;
+  background: linear-gradient(135deg, #f6f7fb 0%, #eef2ff 100%);
+  color: #6b7280;
+  font-weight: 600;
+  font-size: 0.95rem;
+  letter-spacing: 0.03em;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.08);
+}
+.publication-image .pub-placeholder i {
+  font-size: 1.5rem;
+  opacity: 0.65;
 }
 
 .publication-details {
@@ -1039,6 +1067,13 @@ footer {
 }
 
 [data-theme="dark"] .affiliations { border-top-color: #262a3e; }
+[data-theme="dark"] .affiliation-logo,
+[data-theme="dark"] .icon-section .icon img {
+  background: #f5f7ff;
+  border-radius: 8px;
+  padding: 4px 6px;
+  box-sizing: border-box;
+}
 
 [data-theme="dark"] .news-timeline::-webkit-scrollbar-thumb { background-color: #3a4160; }
 [data-theme="dark"] .news-item:hover { background-color: #1a1f33; }
@@ -1054,8 +1089,14 @@ footer {
   box-shadow: 0 8px 22px rgba(0, 0, 0, 0.45);
 }
 [data-theme="dark"] .publication-image img {
-  background-color: #151827;
+  background-color: #fff;
   border-color: #262a3e;
+}
+[data-theme="dark"] .publication-image .pub-placeholder {
+  border-color: #3a4160;
+  background: linear-gradient(135deg, #151827 0%, #1c2340 100%);
+  color: #a9b4d5;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.4);
 }
 [data-theme="dark"] .publication-details h3 a { color: #f0f2fa; }
 [data-theme="dark"] .publication-details h3 a:hover { color: #7aa2ff; }
